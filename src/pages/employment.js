@@ -13,7 +13,6 @@ export default ({ data }) => {
   const allFeaturedImages = data.allFile.edges || []
   const allPosts = data.allMarkdownRemark.edges || []
   const allJobs = data.allJobListingsCsv.edges || []
-  console.log(allJobs) //TODO
   const regex = /\/[blog].*\/|$/
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
 
@@ -68,7 +67,6 @@ export default ({ data }) => {
           </tr>
         </thead>
         {allJobs.map(( listValue, index ) => {
-          console.log(listValue)
           return (
             <tr key={index}>
               <td><a href={listValue.node.url}>{listValue.node.name}</a></td>
