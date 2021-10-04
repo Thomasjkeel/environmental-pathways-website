@@ -8,12 +8,12 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `EDI Committee`,
-    author: `John Doe`,
+    author: `TK`,
     firstName: `EDI`,
     groupName: `NERC EDI Committee`,
     lastName: `Committee`,
     description: `NERC EDI Committee Proposal`,
-    keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
+    keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`], // Used in SEO
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: true,

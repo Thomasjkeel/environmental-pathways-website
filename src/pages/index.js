@@ -26,7 +26,7 @@ export default ({ data }) => {
               color: "black",
             }}
           >
-          <span className="rainbow-text">EDI</span>
+          <span className="rainbow-text">EDI </span>
           <span className="last-name">Committee</span>
         </h1>
         <Form className="blog-filter">
