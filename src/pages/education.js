@@ -71,7 +71,7 @@ export default ({ data }) => {
             laboris nisi ut aliquip ex ea commodo consequat.
           </p>
           <p className="i-5">
-            Check out my <Link to="/projects">projects</Link> to see what I've
+            Check out my <Link to="/profiles">profiles</Link> to see what I've
             been up to! Or check out my <Link to="/blog">blog</Link> to see
             what's recently caught my eye!
           </p>

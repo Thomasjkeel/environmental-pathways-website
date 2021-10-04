@@ -13,7 +13,7 @@ module.exports = {
     groupName: `NERC EDI Committee`,
     lastName: `Committee`,
     description: `NERC EDI Committee Proposal`,
-    keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`], // Used in SEO
+    keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Profiles`, `Work`], // Used in SEO
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: true,
