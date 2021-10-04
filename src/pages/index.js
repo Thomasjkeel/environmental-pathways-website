@@ -26,10 +26,10 @@ export default ({ data }) => {
               color: "black",
             }}
           >
-          <span class="rainbow-text">EDI</span>
+          <span className="rainbow-text">EDI</span>
           <span className="last-name">Committee</span>
         </h1>
-        <Form className="aurebesh blog-filter">
+        <Form className="blog-filter">
           <FormControl
             className="bg-none search"
             type="text"
@@ -52,6 +52,17 @@ export default ({ data }) => {
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
+          <a
+              href="https://twitter.com/PhDs_For_EDI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "twitter"]}
+                className="icons twitter"
+                title="Twitter"
+              />
+            </a>
           <a
             href="mailto:phdsforedi@gmail.com"
             target="_blank"
@@ -81,9 +92,7 @@ export const query = graphql`
   query {
     site {
       siteMetadata {
-        unemployed
         groupName
-        occupation
       }
     }
   }

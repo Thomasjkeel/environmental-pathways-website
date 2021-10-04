@@ -10,10 +10,9 @@ module.exports = {
     title: `EDI Committee`,
     author: `John Doe`,
     firstName: `EDI`,
-    groupName: `EDI Committee`,
+    groupName: `NERC EDI Committee`,
     lastName: `Committee`,
-    description: `John Doe's personal site`,
-    occupation: `Software Engineer`,
+    description: `NERC EDI Committee Proposal`,
     keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,

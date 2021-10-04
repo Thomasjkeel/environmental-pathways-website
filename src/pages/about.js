@@ -58,7 +58,7 @@ export default ({ data }) => {
               padawan
             </a>
             &nbsp;
-            <b>{occupation}</b> discovering the ways of the code. Lorem ipsum
+            <b>This used to be occupation</b> discovering the ways of the code. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -123,7 +123,6 @@ export const query = graphql`
     site {
       siteMetadata {
         unemployed
-        occupation
         author
         designations
         readingList {
