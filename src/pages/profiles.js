@@ -2,18 +2,30 @@ import React from "react"
 import { graphql } from "gatsby"
 import { PageLayout, PageTitle, ProjectLink } from "../components"
 import { SEO, Utils } from "../utils"
-import Container from "react-bootstrap/Container"
+// import Container from "react-bootstrap/Container"
+import { Container, Form, FormControl } from "react-bootstrap"
+
 
 export default ({ data }) => {
   const allProjects = data.allMarkdownRemark.edges || []
   const allFeaturedImages = data.allFile.edges || []
   const regex = /\/[profiles].*\/|$/
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex, true, 3)
-
   return (
     <PageLayout>
       <SEO title="Profiles" />
       <PageTitle title="Profiles" />
+      <Container className="px-5 mb-5 text-center">
+        <i><b>NOTE TO NERC:</b> Ability to search using tag</i>
+        <Form>
+          <FormControl
+            className="bg-none search"
+            type="text"
+            placeholder="Search"
+            // onChange={handleChange} // maybe implement a handleChange method
+          />
+        </Form>
+      </Container>
       <Container className="text-left">
         <section>
           {allProjects.map(({ node }) => (
