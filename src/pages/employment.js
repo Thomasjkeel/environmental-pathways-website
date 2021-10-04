@@ -43,10 +43,10 @@ export default ({ data }) => {
 
   return (
     <PageLayout>
-      <SEO title="Blog" />
-      <PageTitle title="My Blog" />
+      <SEO title="Employment" />
+      <PageTitle title="Employment Page" />
       <Container className="px-5 mb-5 text-center">
-        <Form className="aurebesh blog-filter">
+        <Form>
           <FormControl
             className="bg-none search"
             type="text"
