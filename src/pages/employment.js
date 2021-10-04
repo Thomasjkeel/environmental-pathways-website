@@ -42,7 +42,7 @@ export default ({ data }) => {
 
   const { filteredData, query } = state
   const filteredPosts = query !== "" ? filteredData : allPosts
-  
+
   return (
     <PageLayout>
       <SEO title="Employment" />
@@ -60,31 +60,34 @@ export default ({ data }) => {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>Job listing (URL)</th>
+            <th>Summary</th>
+            <th>Strength(s)</th>
+            <th>Weakness(es)</th>
+            <th>Rating</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        {allJobs.map(( listValue, index ) => {
+          console.log(listValue)
+          return (
+            <tr key={index}>
+              <td><a href={listValue.node.url}>{listValue.node.name}</a></td>
+              <td>{listValue.node.summary}</td>
+              <td>{listValue.node.strengths}</td>
+              <td>{listValue.node.weaknesses}</td>
+              <td>{listValue.node.rating}</td>
+              <td>{listValue.node.category}</td>
+            </tr>
+          );
+        })}
+        {/* <tbody> */}
+          {/* <tr>
             <td>1</td>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
+          </tr> */}
+        {/* </tbody> */}
       </Table>
       <Container
         fluid
@@ -111,6 +114,7 @@ export const query = graphql`
     allJobListingsCsv {
       edges {
         node {
+          name
           url
           summary
           strengths
