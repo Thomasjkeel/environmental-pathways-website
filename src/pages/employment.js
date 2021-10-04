@@ -12,6 +12,8 @@ export default ({ data }) => {
 
   const allFeaturedImages = data.allFile.edges || []
   const allPosts = data.allMarkdownRemark.edges || []
+  const allJobs = data.allJobListingsCsv.edges || []
+  console.log(allJobs) //TODO
   const regex = /\/[blog].*\/|$/
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
 
@@ -40,7 +42,7 @@ export default ({ data }) => {
 
   const { filteredData, query } = state
   const filteredPosts = query !== "" ? filteredData : allPosts
-
+  
   return (
     <PageLayout>
       <SEO title="Employment" />
@@ -106,6 +108,18 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
+    allJobListingsCsv {
+      edges {
+        node {
+          url
+          summary
+          strengths
+          weakeness
+          rating
+          category
+        }
+      }
+    }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }
