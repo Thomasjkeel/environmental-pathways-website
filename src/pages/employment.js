@@ -45,6 +45,16 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Employment" />
       <PageTitle title="Employment Page" />
+      <Container className="px-5 mb-5 text-center">
+        <Form>
+          <FormControl
+            className="bg-none search"
+            type="text"
+            placeholder="Search"
+            onChange={handleChange}
+          />
+        </Form>
+      </Container>
       <Table striped bordered hover>
         <thead>
           <tr>
@@ -74,16 +84,6 @@ export default ({ data }) => {
           </tr>
         </tbody>
       </Table>
-      <Container className="px-5 mb-5 text-center">
-        <Form>
-          <FormControl
-            className="bg-none search"
-            type="text"
-            placeholder="Search"
-            onChange={handleChange}
-          />
-        </Form>
-      </Container>
       <Container
         fluid
         className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
