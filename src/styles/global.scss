@@ -105,3 +105,10 @@ body {
 .unemployed {
   font-size: 1.35rem;
 }
+
+
+.rainbow-text {
+  background-image: linear-gradient(to top, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

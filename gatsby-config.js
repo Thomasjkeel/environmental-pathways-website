@@ -7,10 +7,11 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `John Doe`,
+    title: `EDI Committee`,
     author: `John Doe`,
-    firstName: `John`,
-    lastName: `Doe`,
+    firstName: `EDI`,
+    groupName: `EDI Committee`,
+    lastName: `Committee`,
     description: `John Doe's personal site`,
     occupation: `Software Engineer`,
     keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
