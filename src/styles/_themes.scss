@@ -21,6 +21,7 @@ $themes: (
     hrefColor: $dark-blue,
     github: $black,
     linkedin: $linkedin-blue,
+    twitter: $twitter-blue,
     fcc: $fcc-green,
     hr: $hr-green,
     mail: $yellow,
@@ -43,6 +44,7 @@ $themes: (
     heartColor: red,
     github: $empire-red,
     linkedin: $empire-red,
+    twitter: $empire-red,
     fcc: $empire-red,
     hr: $empire-red,
     mail: $empire-red,
@@ -176,6 +178,9 @@ $themes: (
     }
     &.file {
       color: themed("file");
+    }
+    &.twitter {
+      color: themed("twitter");
     }
   }
 }

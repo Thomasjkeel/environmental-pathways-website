@@ -26,6 +26,7 @@ export default ({ data }) => {
               color: "black",
             }}
           >
+          {/* <span className="last-name">NERC </span> */}
           <span className="rainbow-text">EDI </span>
           <span className="last-name">Committee</span>
         </h1>
@@ -42,7 +43,7 @@ export default ({ data }) => {
         <Container className="py-0 my-0">
           <p>
             <i>
-                Proposal Website for the {groupName}
+                Proposal website for the {groupName}
             </i>
             {/* <i>
               {occupation} by day,&nbsp;

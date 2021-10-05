@@ -70,11 +70,11 @@ export default ({ data }) => {
         {allCourses.map(( listValue, index ) => {
           return (
             <tr key={index}>
-              <td><a href={listValue.node.url}>{listValue.node.name}</a></td>
+              <td><a href={listValue.node.url}>{listValue.node.course}</a></td>
+              <td>{listValue.node.university}</td>
               <td>{listValue.node.summary}</td>
               <td>{listValue.node.strengths}</td>
               <td>{listValue.node.weakeness}</td>
-              <td>{listValue.node.rating}</td>
               <td>{listValue.node.category}</td>
             </tr>
           );
@@ -89,12 +89,12 @@ export const query = graphql`
     allCoursesCsv {
       edges {
         node {
-          name
+          course
           url
+          university
           summary
           strengths
           weakeness
-          rating
           category
         }
       }
