@@ -18,15 +18,13 @@ export default ({ data }) => {
 
     const filteredData = allJobs.filter(post => {
       // query will run on the following fields
-      const { description, title, tags, author } = post.node.frontmatter
+      const { name, url, summary, strengths, weakeness, rating, category } = post.node
       // standardize query
       const stdQuery = query.toLowerCase()
       return (
-        post.node.excerpt.toLowerCase().includes(stdQuery) ||
-        (description && description.toLowerCase().includes(stdQuery)) ||
-        title.toLowerCase().includes(stdQuery) ||
-        author.toLowerCase().includes(stdQuery) ||
-        (tags && tags.join("").toLowerCase().includes(stdQuery))
+        // post.node.excerpt.toLowerCase().includes(stdQuery) ||
+        (name && name.toLowerCase().includes(stdQuery)) ||
+        (category.toLowerCase().includes(stdQuery))
       )
     })
 
@@ -44,6 +42,9 @@ export default ({ data }) => {
       <SEO title="Employment" />
       <PageTitle title="Employment Page" />
       <Container className="px-5 mb-5 text-center">
+        <i>Here you can...</i>
+        <i><b>NOTE TO NERC:</b> Ability to search using tag</i>
+
         <Form>
           <FormControl
             className="bg-none search"

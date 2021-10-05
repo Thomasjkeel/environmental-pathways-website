@@ -10,7 +10,7 @@ module.exports = {
     title: `EDI Committee`,
     author: `TK`,
     firstName: `EDI`,
-    groupName: `NERC EDI Committee`,
+    groupName: `London NERC EDI Committee`,
     lastName: `Committee`,
     description: `NERC EDI Committee Proposal`,
     keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Profiles`, `Work`], // Used in SEO
