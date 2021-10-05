@@ -25,6 +25,9 @@ export default ({ excerpt, featuredImages, tags, title, to }) => {
       ))}
       <p className="pt-3 text-justify">{excerpt}</p>
     </Container>
+    <p>
+      <a className="btn btn-secondary" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">+</a>
+    </p>
     </Card>
   )
 }
