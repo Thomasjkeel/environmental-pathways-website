@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `EDI Committee`,
-    author: `TK`,
+    author: `London NERC DTP`,
     firstName: `EDI`,
     groupName: `London NERC EDI Committee`,
     lastName: `Committee`,
