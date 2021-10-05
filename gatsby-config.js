@@ -13,7 +13,7 @@ module.exports = {
     groupName: `London NERC EDI Committee`,
     lastName: `Committee`,
     description: `NERC EDI Committee Proposal`,
-    keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Profiles`, `Work`], // Used in SEO
+    keywords: [`EDI`, `London NERC`, `Committee`, `Equity`, `Diversity`, `Inclusion`], // Used in SEO
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: true,
@@ -83,9 +83,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `John Doe's Personal Site`,
-        short_name: `J.Doe`,
-        description: `This is my personal site.`,
+        name: `London NERC EDI Committee`,
+        short_name: `NERC EDI`,
+        description: `This is website for London NERC EDI group.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,

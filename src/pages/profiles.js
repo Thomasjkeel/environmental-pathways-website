@@ -72,7 +72,7 @@ export const query = graphql`
     }
     allFile(
       filter: {
-        extension: { eq: "png" }
+        extension: { regex: "/(jpg)|(png)|(jpeg)/" }
         relativePath: { regex: "/profile-pic/" }
         relativeDirectory: { regex: "/content/profiles/" }
       }
