@@ -11,12 +11,13 @@ export default ({ excerpt, featuredImages, tags, title, to }) => {
           {featuredImages &&
             featuredImages.map(image => (
               <Col key={image.src}>
-                <Img fluid={image} className="m-auto w-75" />
+                <Img fluid={image} className="m-auto profile-pics" />
               </Col>
             ))}
         </Row>
         <h2 className="mt-5">{title}</h2>
       </Link>
+      {console.log(featuredImages)}
       {tags.map(tag => (
         <Badge key={tag} pill variant="dark" className="px-2 mr-1">
           {tag}
