@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { Container, Badge, Col, Row } from "react-bootstrap"
+import { Container, Badge, Col, Row, Card } from "react-bootstrap"
 
 export default ({ excerpt, featuredImages, tags, title, to }) => {
   return (
+    <Card>
     <Container className="text-center">
       <Link to={to} style={{ textDecoration: "none" }}>
         <Row>
@@ -24,5 +25,6 @@ export default ({ excerpt, featuredImages, tags, title, to }) => {
       ))}
       <p className="pt-3 text-justify">{excerpt}</p>
     </Container>
+    </Card>
   )
 }

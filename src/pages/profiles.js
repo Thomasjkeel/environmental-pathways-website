@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { PageLayout, PageTitle, ProjectLink } from "../components"
+import { PageLayout, PageTitle, ProfileLink } from "../components"
 import { SEO, Utils } from "../utils"
 // import Container from "react-bootstrap/Container"
 import { Container, Form, FormControl } from "react-bootstrap"
@@ -30,14 +30,14 @@ export default ({ data }) => {
         <section>
           {allProjects.map(({ node }) => (
             <div key={node.id} className="p-3">
-              <ProjectLink
+              <ProfileLink
                 to={node.fields.slug}
                 featuredImages={featuredImageMap[node.fields.slug]}
                 title={node.frontmatter.title}
                 tags={node.frontmatter.tags}
                 excerpt={node.excerpt}
               />
-              <hr />
+              {/* <hr /> */}
             </div>
           ))}
         </section>
