@@ -7,7 +7,7 @@ import { Container } from "react-bootstrap"
 
 import SEO from "../utils/seo"
 
-export default ({ title, excerpt, html, subTitle, image }) => (
+const postTemplate = ({ title, excerpt, html, subTitle, image }) => (
   <PageLayout>
     <SEO title={title} description={excerpt} />
     <Container className="text-center" fluid>
@@ -24,3 +24,5 @@ export default ({ title, excerpt, html, subTitle, image }) => (
     </Container>
   </PageLayout>
 )
+
+export default postTemplate;

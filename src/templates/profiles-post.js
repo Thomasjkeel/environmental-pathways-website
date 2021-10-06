@@ -4,7 +4,7 @@ import PostTemplate from "./post-template"
 import Badge from "react-bootstrap/Badge"
 
 
-import { Utils } from "../utils"
+// import { Utils } from "../utils"
 
 
 
@@ -18,7 +18,7 @@ const SubTitle = ({ tags }) => (
   </div>
 )
 
-export default ({ data }) => {
+const profilePost = ({ data }) => {
   const post = data.markdownRemark
   const allImages = data.allFile.edges
   var imageToUse
@@ -38,6 +38,8 @@ export default ({ data }) => {
     />
   )
 }
+
+export default profilePost;
 
 export const query = graphql`
   query($slug: String!) {

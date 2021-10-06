@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { Container, Badge, Col, Row, Card } from "react-bootstrap"
 
-export default ({ excerpt, featuredImages, tags, title, to }) => {
+const profileLink = ({ excerpt, featuredImages, tags, title, to }) => {
   return (
     <Card className="p-4">
     <Container className="text-center">
@@ -31,3 +31,5 @@ export default ({ excerpt, featuredImages, tags, title, to }) => {
     </Card>
   )
 }
+
+export default profileLink;
