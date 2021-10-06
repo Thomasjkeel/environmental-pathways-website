@@ -1,6 +1,6 @@
 ---
 title: "Dr. John America"
-tags: ["Lab Technician", "Biologist", ""]
+tags: ["Lab Technician", "Biologist"]
 description: "999"
 author: "Dr. John America"
 date: "2020-05-12"
