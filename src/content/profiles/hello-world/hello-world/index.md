@@ -1,8 +1,8 @@
 ---
-title: "Hello World folder"
-tags: ["Hello", "World", "First", "Post"]
+title: "Dr. John America"
+tags: ["Lab Technician", "Biologist", ""]
 description: "999"
-author: "John Doe"
+author: "Dr. John America"
 date: "2020-05-12"
 profilepic: "content/profiles/hello-world/hello-world/profile-pic.png"
 ---

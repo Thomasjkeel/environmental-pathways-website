@@ -1,8 +1,8 @@
 ---
-title: "Hello World folder"
-tags: ["Hello", "World", "First", "Post"]
+title: "Prof. Jane Doe"
+tags: ["Professor", "Researcher", "GeoScience", "LBGTQ+"]
 description: "999"
-author: "John Doe"
+author: "Prof. Jane Doe"
 date: "2020-05-12"
 profilepic: "content/profiles/hello-world/hello-world/profile-pic.png"
 ---
