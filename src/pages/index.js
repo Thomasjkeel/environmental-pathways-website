@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
-import { Container, Image, Form, FormControl } from "react-bootstrap"
+import { Container, Image, Form, FormControl, InputGroup, Button, ToggleButton, ToggleButtonGroup, Row, Col, Card } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
@@ -31,15 +31,102 @@ export default ({ data }) => {
           <span className="last-name">Pathways</span>
         </h1>
         <i>Find your pathway into the Environmental Sciences</i>
-        <Form className="blog-filter">
-          <FormControl
-            className="bg-none search"
-            type="text"
-            placeholder="Search"
-            onChange={console.log('search bar used')}
-          />
-        </Form>
+          <InputGroup className="mb-3 blog-filter">
+            <FormControl
+              aria-label="Example text with button addon"
+              aria-describedby="basic-addon1"
+            />
+            <Button variant="outline-secondary" id="button-addon1">
+              Find
+            </Button>
+          </InputGroup>
       </Container>
+      {/* <Container> */}
+      {/* <Container className="p-1 text-center"> */}
+      <div className="p-2">
+        {/* Move to  a component */}
+        <Row>
+          <Col>
+            <p  style={{fontSize: "1.7rem"}} className="text-secondary">What are you looking for?</p>
+          </Col>
+          <Col>
+            <p  style={{fontSize: "1.7rem"}} className="text-secondary">What is your education level?</p>
+          </Col>
+        </Row>
+        <Row className="pl-4 pb-4">
+          <Col>
+            <ToggleButtonGroup type="checkbox" name="options" className="p-2">
+                <ToggleButton variant="outline-dark" id="tbg-check-1" value={1}>
+                  Find job opportunities
+                </ToggleButton>
+                <ToggleButton variant="outline-dark" id="tbg-check-2" value={2}>
+                  Find volunteering opportunites
+                </ToggleButton>
+                <ToggleButton variant="outline-dark" id="tbg-check-3" value={3}>
+                  Find courses
+                </ToggleButton>
+                <ToggleButton variant="outline-dark" id="tbg-check-4" value={4}>
+                  Other
+                </ToggleButton>
+              </ToggleButtonGroup>
+          </Col>
+          <Col>
+            <ToggleButtonGroup type="checkbox" name="options">
+                <ToggleButton variant="outline-primary" id="tbg-check-1" value={1}>
+                  Post-16
+                </ToggleButton>
+                <ToggleButton variant="outline-primary" id="tbg-check-2" value={2}>
+                  A-levels
+                </ToggleButton>
+                <ToggleButton variant="outline-primary" id="tbg-check-3" value={3}>
+                  Undergraduate
+                </ToggleButton>
+                <ToggleButton variant="outline-primary" id="tbg-check-4" value={4}>
+                  Postgraduate
+                </ToggleButton>
+                <ToggleButton variant="outline-primary" id="tbg-check-4" value={5}>
+                  Other
+                </ToggleButton>
+              </ToggleButtonGroup>
+          </Col>
+        </Row>
+        <Row className="text-center">
+          <Col>
+            <p  style={{fontSize: "1.7rem"}} className="text-secondary">Example</p>
+          </Col>
+          <Col>
+            <p  style={{fontSize: "1.7rem"}} className="text-secondary">Why are you here?</p>
+          </Col>
+        </Row>
+        <Row  className="pl-4">
+          <Col>
+            <ToggleButtonGroup type="radio" name="options">
+                <ToggleButton variant="outline-primary" id="tbg-radio-1" value={1}>
+                  Yes
+                </ToggleButton>
+                <ToggleButton variant="outline-primary" id="tbg-radio-2" value={2}>
+                  No
+                </ToggleButton>
+              </ToggleButtonGroup>
+          </Col>
+          <Col>
+            <ToggleButtonGroup type="checkbox" name="options">
+                <ToggleButton variant="outline-primary" id="tbg-check-1" value={1}>
+                  Find job opportunities
+                </ToggleButton>
+                <ToggleButton variant="outline-primary" id="tbg-check-2" value={2}>
+                  Find volunteering opportunites
+                </ToggleButton>
+                <ToggleButton variant="outline-primary" id="tbg-check-3" value={3}>
+                  Find courses
+                </ToggleButton>
+                <ToggleButton variant="outline-primary" id="tbg-check-4" value={4}>
+                  Other
+                </ToggleButton>
+              </ToggleButtonGroup>
+          </Col>
+          </Row>
+        </div>
       <Container className="text-center pt-5 mt-5" fluid>
         <Container className="py-0 my-0">
           <p>

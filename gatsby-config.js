@@ -7,10 +7,10 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `EDI Committee`,
-    author: `London NERC DTP`,
+    title: `Environmental Pathways`,
+    author: `Environmental Pathways`,
     firstName: `EDI`,
-    groupName: `London NERC EDI Committee`,
+    groupName: `Environmental Pathways Team`,
     lastName: `Committee`,
     description: `NERC EDI Committee Proposal`,
     keywords: [`EDI`, `London NERC`, `Committee`, `Equity`, `Diversity`, `Inclusion`], // Used in SEO
