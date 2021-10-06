@@ -5,8 +5,8 @@ import { Container, Badge, Col, Row, Card } from "react-bootstrap"
 
 export default ({ excerpt, featuredImages, tags, title, to }) => {
   return (
-    <Card className="p-4 profile-bg">
-    <Container className="text-center profile-bg">
+    <Card className="p-4">
+    <Container className="text-center">
       <Link to={to} style={{ textDecoration: "none" }}>
         <Row>
           {featuredImages &&
@@ -19,7 +19,7 @@ export default ({ excerpt, featuredImages, tags, title, to }) => {
         <h2 className="mt-5">{title}</h2>
       </Link>
       {tags.map(tag => (
-        <Badge key={tag} pill variant="dark" className="px-2 mr-1">
+        <Badge key={tag} pill bg="primary" className="px-2 mr-1">
           {tag}
         </Badge>
       ))}

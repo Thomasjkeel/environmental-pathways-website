@@ -1,7 +1,7 @@
 import React from "react"
 import { PageLayout, PageTitle } from "../components"
 import Img from "gatsby-image"
-import { Container, Badge, Col, Row } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 
 
