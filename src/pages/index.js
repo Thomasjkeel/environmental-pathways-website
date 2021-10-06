@@ -45,7 +45,7 @@ export default ({ data }) => {
       {/* <Container className="p-1 text-center"> */}
       <div className="text-center">
         {/* Move to  a component */}
-        <Row className="pl-4">
+        <Row className="pl-4 pr-4">
           <Col>
             <p  style={{fontSize: "1.7rem"}} className="text-secondary">What are you looking for?</p>
           </Col>
@@ -53,19 +53,19 @@ export default ({ data }) => {
             <p  style={{fontSize: "1.7rem"}} className="text-secondary">What is your education level?</p>
           </Col>
         </Row>
-        <Row className="pl-4 pb-4">
+        <Row className="pl-4 pb-4 pr-4">
           <Col>
             <ToggleButtonGroup type="checkbox" name="options" className="p-2">
-                <ToggleButton variant="outline-dark" id="tbg-check-1" value={1}>
+                <ToggleButton variant="outline-primary" id="tbg-check-1" value={1}>
                   Find job opportunities
                 </ToggleButton>
-                <ToggleButton variant="outline-dark" id="tbg-check-2" value={2}>
+                <ToggleButton variant="outline-primary" id="tbg-check-2" value={2}>
                   Find volunteering opportunites
                 </ToggleButton>
-                <ToggleButton variant="outline-dark" id="tbg-check-3" value={3}>
+                <ToggleButton variant="outline-primary" id="tbg-check-3" value={3}>
                   Find courses
                 </ToggleButton>
-                <ToggleButton variant="outline-dark" id="tbg-check-4" value={4}>
+                <ToggleButton variant="outline-primary" id="tbg-check-4" value={4}>
                   Other
                 </ToggleButton>
               </ToggleButtonGroup>
@@ -90,7 +90,7 @@ export default ({ data }) => {
               </ToggleButtonGroup>
           </Col>
         </Row>
-        <Row className="pl-4">
+        <Row className="pl-4 pr-4">
           <Col>
             <p  style={{fontSize: "1.7rem"}} className="text-secondary">Example Question</p>
           </Col>
@@ -98,13 +98,13 @@ export default ({ data }) => {
             <p  style={{fontSize: "1.7rem"}} className="text-secondary">Why are you here?</p>
           </Col>
         </Row>
-        <Row  className="pl-4">
+        <Row  className="pl-4 pr-4">
           <Col>
             <ToggleButtonGroup type="radio" name="options">
-                <ToggleButton variant="outline-primary" id="tbg-radio-1" value={1}>
+                <ToggleButton variant="outline-secondary" id="tbg-radio-1" value={1}>
                   Yes
                 </ToggleButton>
-                <ToggleButton variant="outline-primary" id="tbg-radio-2" value={2}>
+                <ToggleButton variant="outline-secondary" id="tbg-radio-2" value={2}>
                   No
                 </ToggleButton>
               </ToggleButtonGroup>
