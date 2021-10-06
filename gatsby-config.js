@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/environmental-pathways-website.io",
   /* Your site config here */
   siteMetadata: {
     title: `Environmental Pathways`,
