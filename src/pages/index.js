@@ -53,9 +53,9 @@ export default ({ data }) => {
             <p  style={{fontSize: "1.7rem"}} className="text-secondary">What is your education level?</p>
           </Col>
         </Row>
-        <Row className="pl-4 pb-4 pr-4">
+        <Row  className="pl-4 pr-4">
           <Col>
-            <ToggleButtonGroup type="checkbox" name="options" className="p-2">
+            <ToggleButtonGroup type="checkbox" name="options">
                 <ToggleButton variant="outline-primary" id="tbg-check-1" value={1}>
                   Find job opportunities
                 </ToggleButton>
@@ -72,24 +72,24 @@ export default ({ data }) => {
           </Col>
           <Col>
             <ToggleButtonGroup type="checkbox" name="options">
-                <ToggleButton variant="outline-primary" id="tbg-check-1" value={1}>
+                <ToggleButton variant="outline-primary" id="rbg-check-1" value={1}>
                   Post-16
                 </ToggleButton>
-                <ToggleButton variant="outline-primary" id="tbg-check-2" value={2}>
+                <ToggleButton variant="outline-primary" id="rbg-check-2" value={2}>
                   A-levels
                 </ToggleButton>
-                <ToggleButton variant="outline-primary" id="tbg-check-3" value={3}>
+                <ToggleButton variant="outline-primary" id="rbg-check-3" value={3}>
                   Undergraduate
                 </ToggleButton>
-                <ToggleButton variant="outline-primary" id="tbg-check-4" value={4}>
+                <ToggleButton variant="outline-primary" id="rbg-check-4" value={4}>
                   Postgraduate
                 </ToggleButton>
-                <ToggleButton variant="outline-primary" id="tbg-check-4" value={5}>
+                <ToggleButton variant="outline-primary" id="rbg-check-5" value={5}>
                   Other
                 </ToggleButton>
               </ToggleButtonGroup>
           </Col>
-        </Row>
+          </Row>
         <Row className="pl-4 pr-4">
           <Col>
             <p  style={{fontSize: "1.7rem"}} className="text-secondary">Example Question</p>
@@ -101,26 +101,26 @@ export default ({ data }) => {
         <Row  className="pl-4 pr-4">
           <Col>
             <ToggleButtonGroup type="radio" name="options">
-                <ToggleButton variant="outline-secondary" id="tbg-radio-1" value={1}>
+                <ToggleButton variant="outline-secondary" id="sbg-radio-1" value={1}>
                   Yes
                 </ToggleButton>
-                <ToggleButton variant="outline-secondary" id="tbg-radio-2" value={2}>
+                <ToggleButton variant="outline-secondary" id="sbg-radio-2" value={2}>
                   No
                 </ToggleButton>
               </ToggleButtonGroup>
           </Col>
           <Col>
             <ToggleButtonGroup type="checkbox" name="options">
-                <ToggleButton variant="outline-primary" id="tbg-check-1" value={1}>
+                <ToggleButton variant="outline-primary" id="zbg-check-1" value={1}>
                   Find job opportunities
                 </ToggleButton>
-                <ToggleButton variant="outline-primary" id="tbg-check-2" value={2}>
+                <ToggleButton variant="outline-primary" id="zbg-check-2" value={2}>
                   Find volunteering opportunites
                 </ToggleButton>
-                <ToggleButton variant="outline-primary" id="tbg-check-3" value={3}>
+                <ToggleButton variant="outline-primary" id="zbg-check-3" value={3}>
                   Find courses
                 </ToggleButton>
-                <ToggleButton variant="outline-primary" id="tbg-check-4" value={4}>
+                <ToggleButton variant="outline-primary" id="zbg-check-4" value={4}>
                   Other
                 </ToggleButton>
               </ToggleButtonGroup>
