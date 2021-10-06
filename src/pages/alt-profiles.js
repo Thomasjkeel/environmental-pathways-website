@@ -3,7 +3,9 @@ import { graphql } from "gatsby"
 import { PageLayout, PageTitle, WorkHistory } from "../components"
 import { SEO, Utils } from "../utils"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Container from "react-bootstrap/Container"
+// import Container from "react-bootstrap/Container"
+import { Container, Form, FormControl, Table } from "react-bootstrap"
+
 
 export default ({ data }) => {
   const history = data.allMarkdownRemark.edges || []
@@ -11,17 +13,27 @@ export default ({ data }) => {
   const imageMap = Utils.getImageMap(images, /\/[work].*\/|$/)
   return (
     <PageLayout>
-      <SEO title="Resume" />
-      <PageTitle title="Resume">
+      <SEO title="Profiles" />
+      <PageTitle title="Profiles">
         &nbsp;
-        <a href="../../resume.pdf" target="_blank" download>
+        {/* <a href="../../resume.pdf" target="_blank" download>
           <FontAwesomeIcon
             style={{ fontSize: "2rem" }}
             icon={["fas", "file-download"]}
             className="icons file"
           />
-        </a>
-      </PageTitle>
+        </a> */}
+      </PageTitle> 
+      <Container>
+      <Form>
+          <FormControl
+            className="bg-none search"
+            type="text"
+            placeholder="Search"
+            // onChange={handleChange}
+          />
+      </Form>
+      </Container>
       <Container className="mt-5 pt-3" fluid>
         {history.map(({ node }) => (
           <div key={node.id}>

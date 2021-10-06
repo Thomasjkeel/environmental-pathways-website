@@ -60,27 +60,28 @@ export default ({ data }) => {
       <Table striped hover className="ml-auto mr-auto">
         <thead>
           <tr>
-            <th>Job listing (URL)</th>
-            <th>Summary</th>
-            <th>Strength(s)</th>
-            <th>Weakness(es)</th>
-            <th>Rating</th>
+            <th>Course</th>
+            <th>Location</th>
+            <th>Related Profiles</th>
             <th>Category</th>
           </tr>
         </thead>
         {allCourses.map(( listValue, index ) => {
           return (
             <tr key={index}>
-              <td><a href={listValue.node.url}>{listValue.node.course}</a></td>
-              <td>{listValue.node.university}</td>
-              <td>{listValue.node.summary}</td>
-              <td>{listValue.node.strengths}</td>
-              <td>{listValue.node.weakeness}</td>
+              <td><a className="last-name" href={listValue.node.url}>{listValue.node.course}</a></td>
+              <td><a className="last-name" href={listValue.node.url}>{listValue.node.location}</a></td>
+              <td><a href={listValue.node.url}>search</a></td>
               <td>{listValue.node.category}</td>
             </tr>
           );
         })}
       </Table>
+        {/* <LeafletMap
+          position={[52,-0.5]}
+          zoom={8}
+          markerText={"Hello, this is a marker"}
+        /> */}
       </Container>
     </PageLayout>
   )
@@ -93,10 +94,7 @@ export const query = graphql`
         node {
           course
           url
-          university
-          summary
-          strengths
-          weakeness
+          location
           category
         }
       }

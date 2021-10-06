@@ -43,8 +43,8 @@ export default ({ data }) => {
 
   return (
     <PageLayout>
-      <SEO title="Employment" />
-      <PageTitle title="Employment Page" />
+      <SEO title="Profile alt" />
+      <PageTitle title="alt Profiles" />
       <Container className="px-5 mb-5 text-center">
         <Form>
           <FormControl
