@@ -42,7 +42,7 @@ export default ({ data }) => {
       <SEO title="Employment" />
       <PageTitle title="Employment Page" />
       <Container className="px-5 mb-5 text-center">
-        <i>Here you can...</i>
+        <i>Here you can...</i> &nbsp;<br />
         <i><b>NOTE TO NERC:</b> Ability to search using tag</i>
         {/* <Row> */}
         <Form>

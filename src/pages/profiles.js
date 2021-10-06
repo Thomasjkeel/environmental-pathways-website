@@ -16,7 +16,7 @@ export default ({ data }) => {
       <SEO title="Profiles" />
       <PageTitle title="Profiles" />
       <Container className="px-5 mb-5 text-center">
-        <i><b>NOTE TO NERC:</b> Ability to search using tag</i>
+        <i><b>NOTE TO NERC:</b> ...</i>
         <Form>
           <FormControl
             className="bg-none search"
