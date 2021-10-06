@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  pathPrefix: "/environmental-pathways-website.io",
   /* Your site config here */
   siteMetadata: {
     title: `Environmental Pathways`,
@@ -17,6 +16,7 @@ module.exports = {
     keywords: [`EDI`, `London NERC`, `Committee`, `Equity`, `Diversity`, `Inclusion`], // Used in SEO
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
+    pathPrefix: "/environmental-pathways-website.io",
     unemployed: true,
     designations: [
       `UCL`,
