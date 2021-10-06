@@ -43,9 +43,9 @@ export default ({ data }) => {
       </Container>
       {/* <Container> */}
       {/* <Container className="p-1 text-center"> */}
-      <div className="p-2">
+      <div className="text-center">
         {/* Move to  a component */}
-        <Row>
+        <Row className="pl-4">
           <Col>
             <p  style={{fontSize: "1.7rem"}} className="text-secondary">What are you looking for?</p>
           </Col>
@@ -90,9 +90,9 @@ export default ({ data }) => {
               </ToggleButtonGroup>
           </Col>
         </Row>
-        <Row className="text-center">
+        <Row className="pl-4">
           <Col>
-            <p  style={{fontSize: "1.7rem"}} className="text-secondary">Example</p>
+            <p  style={{fontSize: "1.7rem"}} className="text-secondary">Example Question</p>
           </Col>
           <Col>
             <p  style={{fontSize: "1.7rem"}} className="text-secondary">Why are you here?</p>
