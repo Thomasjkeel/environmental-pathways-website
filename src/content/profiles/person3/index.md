@@ -1,10 +1,10 @@
 ---
-title: "Prof. Jane Doe"
-tags: ["Professor", "Researcher", "GeoScience", "LBGTQ+"]
+title: "Mr. Some One"
+tags: ["Conservationist", "Recent Graduate", "Color Vision Deficiency"]
 description: "999"
 author: "Prof. Jane Doe"
 date: "2020-05-12"
-profilepic: "content/profiles/hello-world/hello-world/profile-pic.png"
+profilepic: "content/profiles/person3/profile-pic.png"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget augue commodo, rutrum enim vel, varius lorem. Ut nec sem metus. Cras laoreet, metus consectetur mollis consectetur, dui ante tempus ante, eget luctus felis odio sed leo. Sed tempus, ex ultrices porttitor fringilla, enim tellus dictum elit, quis viverra odio orci eu erat. Maecenas auctor ultrices ornare. Mauris consequat a urna in cursus.
