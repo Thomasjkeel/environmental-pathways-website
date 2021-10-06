@@ -1,8 +1,5 @@
 name,url,summary,type,location,category
-Lab Assistant,https://www.google.com,some text,part-time,London (central),4
-b,https://www.google.com,66,a,65,4
-a,https://www.google.com,67,a,65,4
-r,https://www.google.com,65,a,65,4
-z,https://www.google.com,66,a,65,4
-p,https://www.google.com,67,a,65,4
-
+Lab Assistant,https://www.google.com,Job Desciption,part-time,London (central),£15 per hour
+Trainee Hydrologist,https://www.google.com,Job Desciption,full-time,Bristol,£23k-£30k
+Geomatics Surveyor,https://www.google.com,Job Desciption,full-time,Sheffield,£30k-£35k
+Water Engineer,https://www.google.com,Job Desciption,full-time,Leeds,£40k
