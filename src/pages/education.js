@@ -46,7 +46,7 @@ export default ({ data }) => {
       <Container className="px-5 mb-5 text-center">
         <i>Here you can...</i>
         <i><b>NOTE TO NERC:</b> Ability to search using tag</i>
-
+      
         <Form>
           <FormControl
             className="bg-none search"
@@ -56,7 +56,8 @@ export default ({ data }) => {
           />
         </Form>
       </Container>
-      <Table striped bordered hover>
+      <Container>
+      <Table striped hover className="ml-auto mr-auto">
         <thead>
           <tr>
             <th>Job listing (URL)</th>
@@ -80,6 +81,7 @@ export default ({ data }) => {
           );
         })}
       </Table>
+      </Container>
     </PageLayout>
   )
 }

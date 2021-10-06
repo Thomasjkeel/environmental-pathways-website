@@ -22,14 +22,15 @@ export default ({ data }) => {
         />
         <h1
             style={{
-              fontSize: "5rem",
+              fontSize: "4rem",
               color: "black",
             }}
           >
           {/* <span className="last-name">NERC </span> */}
-          <span className="rainbow-text">EDI </span>
-          <span className="last-name">Committee</span>
+          <span className="first-name">Environmental </span>
+          <span className="last-name">Pathways</span>
         </h1>
+        <i>Find your pathway into the Environmental Sciences</i>
         <Form className="blog-filter">
           <FormControl
             className="bg-none search"
@@ -43,7 +44,7 @@ export default ({ data }) => {
         <Container className="py-0 my-0">
           <p>
             <i>
-                Proposal website for the {groupName}
+                Proposal website from the {groupName}
             </i>
             {/* <i>
               {occupation} by day,&nbsp;

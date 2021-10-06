@@ -54,14 +54,14 @@ export default ({ data }) => {
           />
         </Form>
       </Container>
-      <Table striped bordered hover>
+      <Container>
+      <Table striped hover>
         <thead>
           <tr>
-            <th>Job listing (URL)</th>
+            <th>Job</th>
             <th>Summary</th>
-            <th>Strength(s)</th>
-            <th>Weakness(es)</th>
-            <th>Rating</th>
+            <th>Type</th>
+            <th>Location</th>
             <th>Category</th>
           </tr>
         </thead>
@@ -70,22 +70,14 @@ export default ({ data }) => {
             <tr key={index}>
               <td><a href={listValue.node.url}>{listValue.node.name}</a></td>
               <td>{listValue.node.summary}</td>
-              <td>{listValue.node.strengths}</td>
-              <td>{listValue.node.weakeness}</td>
-              <td>{listValue.node.rating}</td>
+              <td>{listValue.node.type}</td>
+              <td>{listValue.node.location}</td>
               <td>{listValue.node.category}</td>
             </tr>
           );
         })}
-        {/* <tbody> */}
-          {/* <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr> */}
-        {/* </tbody> */}
       </Table>
+      </Container>
     </PageLayout>
   )
 }
@@ -98,9 +90,8 @@ export const query = graphql`
           name
           url
           summary
-          strengths
-          weakeness
-          rating
+          type
+          location
           category
         }
       }
