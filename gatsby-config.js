@@ -19,7 +19,11 @@ module.exports = {
     unemployed: true,
     designations: [
       `UCL`,
+      `BBK`,
+      `Brunel`,
+      `ZSL`,
       `KCL`,
+      `NHM`,
       `RHUL`,
       `QMUL`,
     ],

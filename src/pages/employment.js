@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { PageLayout, PageTitle, BlogLink } from "../components"
 import { SEO, Utils } from "../utils"
-import { Container, Form, FormControl, Table } from "react-bootstrap"
+import { Container, Form, FormControl, Table, Row, Dropdown } from "react-bootstrap"
 
 export default ({ data }) => {
   const [state, setState] = useState({
@@ -44,7 +44,7 @@ export default ({ data }) => {
       <Container className="px-5 mb-5 text-center">
         <i>Here you can...</i>
         <i><b>NOTE TO NERC:</b> Ability to search using tag</i>
-
+        {/* <Row> */}
         <Form>
           <FormControl
             className="bg-none search"
@@ -53,6 +53,18 @@ export default ({ data }) => {
             onChange={handleChange}
           />
         </Form>
+        {/* <Dropdown>
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+            Dropdown Button
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown> */}
+        {/* </Row> */}
       </Container>
       <Container>
       <Table striped hover>
