@@ -1,5 +1,5 @@
 ---
-title: "Mr. Some One"
+title: "Some One"
 tags: ["Conservationist", "Recent Graduate", "Color Vision Deficiency"]
 description: "999"
 author: "Prof. Jane Doe"

@@ -4,10 +4,6 @@ import PostTemplate from "./post-template"
 import Badge from "react-bootstrap/Badge"
 
 
-// import { Utils } from "../utils"
-
-
-
 const SubTitle = ({ tags }) => (
   <div className="mb-5">
     {tags.map(tag => (
@@ -55,14 +51,14 @@ export const query = graphql`
     allFile(
       filter: {
         extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-        relativePath: { regex: "/profile-pic/" }
+        relativePath: { regex: "/profile/" }
         relativeDirectory: { regex: "/content/profiles/" }
       }
     ) {
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 700) {
               ...GatsbyImageSharpFluid
             }
           }

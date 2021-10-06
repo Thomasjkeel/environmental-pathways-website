@@ -73,14 +73,14 @@ export const query = graphql`
     allFile(
       filter: {
         extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-        relativePath: { regex: "/profile-pic/" }
+        relativePath: { regex: "/profile/" }
         relativeDirectory: { regex: "/content/profiles/" }
       }
     ) {
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 700) {
               ...GatsbyImageSharpFluid
             }
           }

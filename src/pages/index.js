@@ -129,6 +129,7 @@ export default ({ data }) => {
         </div>
       <Container className="text-center pt-5 mt-5" fluid>
         <Container className="py-0 my-0">
+        <hr className="my-3 w-100" />
           <p>
             <i>
                 Proposal website from the {groupName}
@@ -138,8 +139,9 @@ export default ({ data }) => {
               {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
             </i> */}
           </p>
+         
         </Container>
-        <hr className="my-3 w-25" />
+        
         <div className="d-md-inline-flex icons-container">
           <a
               href="https://twitter.com/PhDs_For_EDI"

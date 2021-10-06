@@ -11,11 +11,7 @@ const postTemplate = ({ title, excerpt, html, subTitle, image }) => (
   <PageLayout>
     <SEO title={title} description={excerpt} />
     <Container className="text-center" fluid>
-      {/* <Img fluid={image} className="m-auto profile-pics" /> */}
-      {/* <Col key={image.src}> */}
-      <Img fluid={image} className="m-auto profile-pics" />
-      {/* </Col> */}
-      {/* <img src={image}></img> */}
+      <Img fluid={image} className="m-auto profile-main-pics" />
       <PageTitle title={title} />
       {subTitle}
       <Container className="text-justify">

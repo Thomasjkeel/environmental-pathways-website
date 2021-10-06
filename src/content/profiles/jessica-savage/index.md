@@ -4,7 +4,7 @@ tags: ["PhD Researcher", "Doctoral Training Partnership"]
 description: "Picture of me on a boat in Australia during my Masters doing plankton trawls"
 author: "Jessica Savage"
 date: "2020-05-12"
-profilepic: "content/profiles/jessica-savage/jessica-savage-cropped.png"
+profilepic: "content/profiles/jessica-savage/profile-jessica-savage.png"
 ---
 
 I’ve never really known what career I wanted to pursue. I remember going to career events at school and feeling daunted by the number of options and being unable to decide which job I would enjoy the most. I always enjoyed Maths and Science, but I also loved reading, languages, and being outdoors. I decided to study Natural Sciences at the University of Durham, because it gave me a lot of flexibility in the subjects I chose, allowing me to study Maths, Physics, and even German. During my undergraduate, I took part in a volunteering programme in the Philippines, doing fish and coral surveys to feed into a wider database looking at the changes of the reef over time. This gave me my first taste of fieldwork and marine conservation, and I never looked back!
