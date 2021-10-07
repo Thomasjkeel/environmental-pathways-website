@@ -13,7 +13,7 @@ export default props => {
         </Card.Title>
         <Card.Subtitle className="mb-1">
           {props.tags.map(tag => (
-              <Badge key={tag} pill bg="primary" className="px-2 mr-1">
+              <Badge key={tag} pill bg="success" className="px-2 mr-1">
                 {tag}
               </Badge>
           ))}
