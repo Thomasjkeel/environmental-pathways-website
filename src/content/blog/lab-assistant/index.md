@@ -1,10 +1,18 @@
 ---
-title: "Hello World"
-tags: ["Hello", "World", "First", "Post"]
+title: "Lab Assistant/Technician"
+tags: ["Lab work", "Science", "Undergraduate"]
 description: "999"
 author: "John Doe"
 date: "2020-05-12"
 ---
+Lab assistants work with medical professionals, researchers, scientists and laboratory technicians to identify and diagnose diseases, screen for illegal substances or develop medications and treatments. They may work in a medical lab, testing collected blood or tissue samples for diagnosing diseases or screening for illegal substances. They may also work in the science field, helping scientists and researchers with lab tests and experiments. Specific responsibilities for this role include:
+
+    - Receiving and processing samples to identify suitability
+    - Preparing test samples using laboratory equipment
+    - Performing laboratory testing and preparing and maintaining accurate lab records
+    - Labeling specimens and distributing them to appropriate departments
+    - Performing quality control as directed by the Laboratory Manager
+    - Cleaning and maintaining the work area as well as all lab equipment and supplies
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget augue commodo, rutrum enim vel, varius lorem. Ut nec sem metus. Cras laoreet, metus consectetur mollis consectetur, dui ante tempus ante, eget luctus felis odio sed leo. Sed tempus, ex ultrices porttitor fringilla, enim tellus dictum elit, quis viverra odio orci eu erat. Maecenas auctor ultrices ornare. Mauris consequat a urna in cursus.
 
