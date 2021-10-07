@@ -11,9 +11,9 @@ export default props => {
         <Card.Title>
           <h4>{props.title}</h4>
         </Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">
+        <Card.Subtitle className="mb-1">
           {props.tags.map(tag => (
-              <Badge key={tag} pill bg="dark" className="px-1 mr-1">
+              <Badge key={tag} pill bg="primary" className="px-1 mr-1">
                 <h5 className="text-white my-0">{tag} </h5>
               </Badge>
           ))}
