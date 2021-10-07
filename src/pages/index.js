@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
-import { Container, Image, Form, FormControl, InputGroup, Button, ToggleButton, ToggleButtonGroup, Row, Col, Card } from "react-bootstrap"
+import { Container, Image, FormControl, InputGroup, Button, ToggleButton, ToggleButtonGroup, Row, Col } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
@@ -112,13 +112,13 @@ export default ({ data }) => {
           <Col>
             <ToggleButtonGroup type="checkbox" name="options">
                 <ToggleButton variant="outline-primary" id="zbg-check-1" value={1}>
-                  Find job opportunities
+                  Find a mentor
                 </ToggleButton>
                 <ToggleButton variant="outline-primary" id="zbg-check-2" value={2}>
-                  Find volunteering opportunites
+                  Find a role model
                 </ToggleButton>
                 <ToggleButton variant="outline-primary" id="zbg-check-3" value={3}>
-                  Find courses
+                  Get advice
                 </ToggleButton>
                 <ToggleButton variant="outline-primary" id="zbg-check-4" value={4}>
                   Other
