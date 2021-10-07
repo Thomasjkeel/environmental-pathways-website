@@ -74,6 +74,7 @@ export default ({ data }) => {
               featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}
               subtitle={node.frontmatter.date}
+              tags={node.frontmatter.tags}
               excerpt={node.excerpt}
             />
           </div>

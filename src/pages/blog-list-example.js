@@ -65,7 +65,7 @@ export default ({ data }) => {
               to={node.fields.slug}
               featuredImage={featuredImageMap[node.fields.slug]}
               title={node.frontmatter.title}
-              subtitle={node.frontmatter.tags}
+              subtitle={node.frontmatter.date}
               excerpt={node.excerpt}
               tags={node.frontmatter.tags}
             />
