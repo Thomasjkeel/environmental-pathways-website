@@ -134,10 +134,6 @@ export default ({ data }) => {
             <i>
                 Proposal website from the {groupName}
             </i>
-            {/* <i>
-              {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
-            </i> */}
           </p>
          
         </Container>
