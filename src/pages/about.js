@@ -60,7 +60,7 @@ export default ({ data }) => {
           </p>
           <p className="i-5">
             Check out our <Link to="/profiles">profiles</Link> to see ...! Or check out our <Link to="/employment">bulletin board</Link> to see
-            what opportunities are out there!
+            what opportunities are out there! Finally, check out our review of <Link to="/existing-resources/">existing resources</Link>.
           </p>
           <p className="i-5">
             Check out how to use this website <Link to="/">here</Link>
