@@ -6,7 +6,7 @@ import { SEO, Utils } from "../utils"
 import { Container, Form, FormControl } from "react-bootstrap"
 
 
-export default ({ data }) => {
+const profilePage = ({ data }) => {
   const allProjects = data.allMarkdownRemark.edges || []
   const allFeaturedImages = data.allFile.edges || []
   const regex = /\/[profiles].*\/|$/
@@ -45,6 +45,8 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
+
+export default profilePage;
 
 export const query = graphql`
   query {

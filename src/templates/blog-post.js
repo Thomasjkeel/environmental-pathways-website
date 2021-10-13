@@ -15,7 +15,7 @@ const SubTitle = ({ ttr, date, author, tags }) => (
   </div>
 )
 
-export default ({ data }) => {
+const blogPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <PostTemplate
@@ -33,6 +33,8 @@ export default ({ data }) => {
     />
   )
 }
+
+export default blogPost;
 
 export const query = graphql`
   query($slug: String!) {

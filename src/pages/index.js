@@ -174,7 +174,6 @@ export default ({ data }) => {
   )
 }
 
-
 export const query = graphql`
   query {
     site {
